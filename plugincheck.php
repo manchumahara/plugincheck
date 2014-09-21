@@ -25,12 +25,12 @@ class JFormFieldPlugincheck extends JFormField {
      */
     protected function getInput() {
 
+        
         $folder     = $this->element['folder'];
         $element    = $this->element['element'];
 
         if(!empty($folder) && !empty($element) ){
             $enabled = JPluginHelper :: isEnabled  ($folder, $element);
-            //var_dump($enabled);
             if($enabled){
                 return '<span class="label label-success">'.$folder. ' plugin "'.$element.'" is enabled</span>';
             }
@@ -39,7 +39,7 @@ class JFormFieldPlugincheck extends JFormField {
             }
         }
         else{
-            return '<span class="label label-info">Field not configured correctly!</span>';
+            return '<span class="label label-info">Field is not configured correctly!</span>';
         }
 
     }
