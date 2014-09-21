@@ -15,3 +15,5 @@ To check if the "loadmodule" content plugin enabled or installed
 
 
 Follow me on twitter http://twitter.com/manchumahara (@manchumahara)
+
+Check similar custom form field to check if component enabled https://github.com/manchumahara/componentcheck
