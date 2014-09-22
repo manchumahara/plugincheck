@@ -26,7 +26,7 @@ class JFormFieldPlugincheck extends JFormField {
     protected function getInput() {
 
 
-        if(version_compare(JVERSION,'3.0.0','le')):
+        if(version_compare(JVERSION,'3.0.0','lt')):
             $doc = JFactory::getDocument();
             $extracss = '
                 .label25{
